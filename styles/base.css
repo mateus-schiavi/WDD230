@@ -97,3 +97,19 @@ footer {
 nav a:hover {
     border: 3px solid #fff;
 }
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos se ajustem à largura da tela */
+    justify-content: space-between; /* Distribui espaço igualmente entre os elementos */
+    align-items: flex-start; /* Alinha os elementos no topo */
+}
+
+.card {
+    flex-basis: calc(50% - 10px); /* Define a largura do card (50% com um espaço de 10px entre eles) */
+    margin-right: 10px; /* Espaço entre os elementos */
+}
+
+.card-info {
+    flex-basis: calc(50% - 10px); /* Define a largura do card-info */
+}
