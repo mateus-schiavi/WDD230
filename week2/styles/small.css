@@ -1,0 +1,95 @@
+body {
+    background-color: #ffffff;
+  }
+  
+  header {
+    font-family: "Play", sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: lighter;
+  }
+  
+  h3 {
+    font-size: 2em;
+    font-family: "Play", sans-serif;
+    background-color: #000000e3;
+    padding: 15px;
+    font-size: 1.7rem;
+    margin: 0px;
+    margin-bottom: 10px;
+    border-top-left-radius: 27px;
+    border-top-right-radius: 27px;
+    color: #ffffff;
+  }
+  
+  h4 {
+    font-size: 1.7em;
+  
+    font-family: "Play", sans-serif;
+    margin-left: 18px;
+  }
+  
+  footer {
+    background-color: #000000;
+    text-align: center;
+    font-family: "Play", sans-serif;
+    color: #ffffff;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-size: 1em;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  section {
+    background-color: #d3d3d3;
+    border: #000000cf 3px solid;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  section p {
+    font-family: "Play", sans-serif;
+    display: block;
+    margin-left: 10px;
+    margin-right: 0;
+    width: 95%;
+  }
+  
+  section a {
+    margin-left: 18px;
+    font-family: "Play", sans-serif;
+    font-size: 1.7em;
+    
+    
+  }
+  
+  section img {
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: #000000cf 3px solid;
+  }
+  
+  #section1 {
+    margin-top: 20px;
+  }
