@@ -19,11 +19,11 @@ header h1 {
     margin-left: 220px; 
 }
 
-nav {
+nav ul {
     background-color: black;
     color: whitesmoke;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 nav ul li {
@@ -91,4 +91,8 @@ footer {
 
 .country {
     margin-left: 90px;
+}
+
+nav a:hover {
+    border: 3px solid #fff;
 }
