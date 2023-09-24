@@ -86,10 +86,6 @@ footer {
     margin-left: -2px;
 }
 
-.contentyear {
-    margin-left: 80px;
-}
-
 .country {
     margin-left: 90px;
 }
@@ -100,16 +96,23 @@ nav a:hover {
 
 .card-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que os elementos se ajustem à largura da tela */
-    justify-content: space-between; /* Distribui espaço igualmente entre os elementos */
-    align-items: flex-start; /* Alinha os elementos no topo */
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: flex-start; 
 }
 
 .card {
-    flex-basis: calc(50% - 10px); /* Define a largura do card (50% com um espaço de 10px entre eles) */
-    margin-right: 10px; /* Espaço entre os elementos */
+    flex-basis: calc(50% - 10px); 
+    margin-right: 10px;
 }
 
 .card-info {
-    flex-basis: calc(50% - 10px); /* Define a largura do card-info */
+    flex-basis: calc(50% - 10px);
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: -150px;
 }
