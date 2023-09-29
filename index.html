@@ -23,13 +23,14 @@
     <body>
         <header>
             <h1>
-                Mateus de Sousa Schiavi
+                <img class="photo" src="./images/photo.jpg" alt="photo">
+                Mateus Schiavi
             </h1>
         </header>
         <nav class="navigation">
             <button id="menu" title="menu"></button>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">Site Plan</a></li>
                 <li><a href="#">Chamber</a></li>
                 <li><a href="#">BYU Idaho</a></li>
@@ -39,8 +40,7 @@
 
         <main>
             <h2>WDD 230: Web Frontend Development</h2>
-            <div class="card-container">
-                <section class="card">
+                <section class="card-info">
                     <h3>Learning Activities</h3>
                     <ul>
 
@@ -64,12 +64,13 @@
                     <p class="weather">(Weather Data)</p>
                     <p class="number">(Number of Visitors)</p>
                 </section>
-            </div>
         </main>
-        <iframe class="frame"
+        <div class="map">
+            <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14630.993650824172!2d-46.31450735!3d-23.5415496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1695951095166!5m2!1spt-BR!2sbr"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <footer>
             <p class="information">
                 &copy; <span id="Year"></span> | Mateus Schiavi | Last Updated:
@@ -77,6 +78,7 @@
             </p>
         </footer>
         <script src="scripts/getdates.js"></script>
+        <script src="scripts/menu.js"></script>
     </body>
 
 </html>
