@@ -1,11 +1,11 @@
 body {
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 header {
     background-color: blueviolet;
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
 header img {
@@ -16,7 +16,7 @@ header img {
 
 header h1 {
     color: white;
-    margin-left: 220px; 
+    margin-left: 220px;
 }
 
 nav ul {
@@ -96,13 +96,13 @@ nav a:hover {
 
 .card-container {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-    align-items: flex-start; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .card {
-    flex-basis: calc(50% - 10px); 
+    flex-basis: calc(50% - 10px);
     margin-right: 10px;
 }
 
@@ -115,4 +115,29 @@ nav a:hover {
     justify-content: center;
     margin-top: 80px;
     margin-left: -150px;
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+    margin-left: 450px;
+    margin-bottom: -70px;
+}
+
+/* CSS to hide the button on larger screens */
+.mobile-menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* CSS to display the button on smaller screens */
+    .mobile-menu-toggle {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        cursor: pointer;
+    }
 }
