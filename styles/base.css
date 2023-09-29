@@ -125,9 +125,6 @@ nav a:hover {
 }
 
 /* CSS to hide the button on larger screens */
-.mobile-menu-toggle {
-    display: none;
-}
 
 @media screen and (max-width: 768px) {
 
