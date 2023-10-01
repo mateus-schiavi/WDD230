@@ -1,0 +1,164 @@
+header {
+    background-color: aquamarine;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: "Fira Sans", sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bold;
+    color: #012e4c;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+main p {
+    text-align: center;
+    font-family: "Fira Sans", sans-serif;
+}
+
+img {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4rem;
+}
+
+nav {
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 30px #333;
+    display: flex;
+}
+
+nav div {
+    flex: 1 1 auto;
+}
+
+nav a {
+    display: block;
+    color: #012e4c;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bolder;
+}
+
+nav a:hover {
+    background-color: #1c98ed;
+    color: #ffd230;
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    font-family: "Play", sans-serif;
+    color: #ffffff;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-size: 1rem;
+}
+
+:root {
+    --primary-color: #1c98ed;
+    --secondary-color: #fff;
+    --accent1-color: #012e4c;
+    --accent2-color: #ffd230;
+
+    --heading-font: "Fira Sans", sans-serif;
+    --paragraph-font: "Fira Sans", sans-serif;
+
+    --headline-color-on-white: #396e94;
+    --headline-color-on-color: #73d3dd;
+    --paragraph-color-on-white: #012e4c;
+    --paragraph-color-on-color: #ffffff;
+    --paragraph-background-color: #1c98ed;
+    --nav-link-color: #73d3dd;
+    --nav-background-color: #000000;
+    --nav-hover-link-color: #ffffff;
+    --nav-hover-background-color: #73d3dd;
+}
+
+.color-table {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.color-table th {
+    background-color: #999;
+}
+
+.color-table {
+    width: 100%;
+    height: 3em;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.accent1 {
+    background-color: var(--accent1-color);
+}
+
+.accent2 {
+    background-color: var(--accent2-color);
+}
+
+.color-paragraph {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+}
+
+h3 {
+    font-family: "Fire Sans", sans-serif;
+    text-align: center;
+    color: #012e4c;
+    padding-top: 2rem;
+}
+
+#target {
+    padding-bottom: 4rem;
+}
+
+#design {
+    background-color: #fff;
+    display: block;
+    color: #012e4c;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bolder;
+    padding-bottom: 8rem;
+}

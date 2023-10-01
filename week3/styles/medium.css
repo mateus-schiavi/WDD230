@@ -1,0 +1,34 @@
+@media only screen and (min-width: 37.rem) {
+    nav {
+        flex-direction: row;
+    }
+}
+
+
+nav a {
+    font-size: 1.1rem;
+}
+
+main{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#design {
+    flex-direction: row;
+    padding-bottom: 10rem;
+}
+
+#design a {
+    display: flex;
+    flex-direction: column;
+    color: #012e4c;
+    padding: 15px;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
