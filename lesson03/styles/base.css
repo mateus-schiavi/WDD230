@@ -1,0 +1,80 @@
+body {
+    max-width: 1485px;
+    min-width: min-content;
+    margin: auto;
+    background-color: aquamarine;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+#name h2 {
+    display: flex;
+    justify-content: center;
+}
+
+#name p {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#purpose {
+    margin-left: 10px;
+}
+
+#scene h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.take-1 h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.take-1 p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#colors h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#color-1,
+#color-2,
+#color-3,
+#color-4,
+#color-5,
+#color-6 {
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.logo_name {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    display: flex;
+   margin: auto;
+   max-width: 500px;
+   border-radius: 125px;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+}
