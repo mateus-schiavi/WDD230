@@ -1,0 +1,16 @@
+
+@media screen and (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        height: 80px;
+    }
+    #menu-toggle {
+        display: block;
+    }
+}
+
+

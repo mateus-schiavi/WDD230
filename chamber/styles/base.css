@@ -1,0 +1,176 @@
+/* Reset de margens e preenchimentos para o body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f0f0;
+    color: #000080;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #000080;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center; /* Centraliza o texto no cabeçalho */
+}
+
+/* Estilo para o logo */
+#linked_logo img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Estilo para a navegação */
+nav {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center;
+}
+
+nav ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul.nav li {
+    margin-right: 20px;
+}
+
+/* Estilo para os links */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para as imagens */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo para os títulos */
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #000080;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+/* Estilo para as seções */
+section {
+    margin-bottom: 20px;
+}
+
+/* Estilo para a seção de exploração */
+#explore {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.exploration, .university, .work {
+    flex-basis: calc(33.33% - 20px);
+    margin-right: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+/* Estilo para a seção de data */
+.date {
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    color: #808080;
+}
+
+/* Estilo para o botão "Join Us" */
+#join a {
+    display: inline-block;
+    background-color: #FFFF00;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#join a:hover {
+    background-color: #008000;
+}
+
+footer {
+    background-color: black;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+}
+
+/* Ocultar o menu de navegação em dispositivos móveis */
+.nav {
+    display: none;
+}
+
+/* Estilo do botão "hamburger" */
+#menu-toggle {
+    display: block; /* Torna visível em dispositivos móveis */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.hamburger::before,
+.hamburger::after,
+.hamburger {
+    content: "";
+    display: block;
+    background-color: #333; 
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.nav-active .hamburger::before {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.nav-active .hamburger::after {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-active .hamburger {
+    background-color: transparent;
+}
