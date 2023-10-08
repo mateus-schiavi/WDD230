@@ -1,0 +1,67 @@
+/* Media query for mobile devices */
+@media screen and (min-width: 37.5em) {
+    /* Reset styles for the body if needed for mobile devices */
+
+    /* Styles for the header, logo, and mobile navigation */
+    header {
+        padding: 10px 0; /* Reduce padding */
+    }
+
+    #linked_logo img {
+        max-width: 100px; /* Reduce logo size */
+    }
+
+    nav {
+        display: none; /* Hide the default navigation */
+    }
+
+    /* Styles for the mobile navigation menu */
+    .nav {
+        display: block; /* Make it visible on mobile devices */
+    }
+
+    #menu-toggle {
+        display: block; /* Make the mobile "hamburger" button visible */
+    }
+
+    .hamburger::before,
+    .hamburger::after,
+    .hamburger {
+        content: "";
+        display: block;
+        background-color: #333;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    /* Styles for the mobile navigation menu links */
+    nav ul.nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul.nav li {
+        margin-right: 0; /* Remove right margin to avoid excessive spacing */
+        text-align: center; /* Center the text */
+        padding: 10px 0; /* Add inner space to make the links more clickable */
+    }
+
+    a {
+        color: #000080; /* Use a readable text color */
+        text-decoration: none;
+    }
+
+    /* Styles for the main content (adjust as needed for mobile devices) */
+    main {
+        margin: 10px; /* Add margin for spacing */
+        padding: 10px; /* Add inner spacing */
+    }
+
+    /* Styles for the mobile footer (adjust as needed) */
+    footer {
+        padding: 10px; /* Add inner spacing to make the text readable */
+    }
+
+    /* Styles for other elements as needed for mobile devices */
+}
