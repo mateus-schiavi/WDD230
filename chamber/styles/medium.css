@@ -1,16 +1,167 @@
+/* Estilos para dispositivos móveis */
+@media (max-width: 767px) {
 
-@media screen and (max-width: 768px) {
-
+    /* Reset de margens e preenchimentos para o body */
     body {
-        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', sans-serif;
+        background-color: #f0f0f0;
+        color: #000080;
     }
 
+    /* Estilo para o cabeçalho */
     header {
-        height: 80px;
+        background-color: #000080;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
     }
-    #menu-toggle {
+
+    /* Estilo para o logo */
+    #linked_logo img {
+        max-width: 150px;
+        height: auto;
+        margin-right: 20px;
+    }
+
+    /* Estilo para a navegação */
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul.nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul.nav li {
+        margin-right: 20px;
+    }
+
+    /* Estilo para os links */
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Estilo para o conteúdo principal */
+    main {
+        max-width: 100%;
+        /* Ocupa a largura total */
+        margin: 0;
+        /* Remove margem para aproveitar o espaço disponível */
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estilo para as imagens */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Estilo para os títulos */
+    h1,
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        color: #000080;
+    }
+
+    h1 {
+        font-size: 28px;
+        /* Reduz o tamanho do título principal */
+    }
+
+    h2 {
+        font-size: 20px;
+        /* Reduz o tamanho dos subtítulos */
+    }
+
+    /* Estilo para as seções */
+    section {
+        margin-bottom: 20px;
+    }
+
+    /* Estilo para a seção de exploração */
+    #explore {
+        display: flex;
+        flex-direction: column;
+        /* Coloca os elementos um abaixo do outro */
+    }
+
+    .exploration,
+    .university,
+    .work,
+    .things {
+        flex-basis: 100%;
+        /* Ocupa a largura total */
+        margin-right: 0;
+        /* Remove a margem direita */
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
+
+    /* Estilo para a seção de data */
+    .date {
+        font-family: 'Inconsolata', monospace;
+        font-size: 18px;
+        color: #808080;
+    }
+
+    /* Estilo para o botão "Join Us" */
+    #join a {
+        display: inline-block;
+        background-color: #FFFF00;
+        color: #FFFFFF;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+        margin-left: 0;
+        /* Remove a margem esquerda */
+        margin-top: 10px;
+        /* Adiciona um espaço acima do botão */
+    }
+
+    #join a:hover {
+        background-color: #008000;
+    }
+
+    footer {
+        background-color: black;
+    }
+
+    footer p {
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    .location {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Exibir o menu de navegação em dispositivos móveis */
+    .nav {
         display: block;
     }
+
+    /* Estilo do botão "hamburger" */
+    #menu-toggle {
+        display: none;
+        /* Oculta o botão de menu em dispositivos móveis */
+    }
 }
-
-
