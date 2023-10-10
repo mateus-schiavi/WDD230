@@ -12,7 +12,8 @@ header {
     background-color: #000080;
     color: #fff;
     padding: 20px 0;
-    text-align: center; /* Centraliza o texto no cabeçalho */
+    text-align: center;
+    /* Centraliza o texto no cabeçalho */
 }
 
 /* Estilo para o logo */
@@ -26,7 +27,8 @@ header {
 /* Estilo para a navegação */
 nav {
     display: flex;
-    justify-content: center; /* Centraliza os itens horizontalmente */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
     align-items: center;
 }
 
@@ -63,12 +65,16 @@ main {
 
 /* Estilo para as imagens */
 img {
-    max-width: 100%;
-    height: auto;
+    border-radius: 20px;
+    display: block;
+
+    margin: 0 auto;
+
 }
 
 /* Estilo para os títulos */
-h1, h2 {
+h1,
+h2 {
     font-family: 'Poppins', sans-serif;
     color: #000080;
 }
@@ -78,6 +84,12 @@ h1 {
     font-size: 36px;
     margin-right: 120px;
     margin-left: -20px;
+}
+
+#section h1 {
+    color: blue;
+    display: flex;
+    justify-content: center;
 }
 
 h2 {
@@ -96,7 +108,9 @@ section {
     flex-wrap: wrap;
 }
 
-.exploration, .university, .work {
+.exploration,
+.university,
+.work {
     flex-basis: calc(33.33% - 20px);
     margin-right: 20px;
     background-color: #fff;
@@ -111,35 +125,45 @@ section {
     color: #808080;
 }
 
-/* Estilo para o botão "Join Us" */
+#join {
+    text-align: center;
+
+}
+
 #join a {
     display: inline-block;
-    background-color: #FFFF00;
+    background-color: black;
     color: #FFFFFF;
     padding: 10px 20px;
     border-radius: 5px;
     text-align: center;
     font-weight: bold;
-    margin-left: 20px;
+    margin: 0 auto;
+
 }
 
 #join a:hover {
-    background-color: #008000;
+    background-color: blueviolet;
 }
 
+
 footer {
-    background-color: black;
+    background-color: beige;
 }
 
 footer p {
     display: flex;
     justify-content: center;
-    color: white;
+    color: black;
 }
 
 .location {
     display: flex;
     justify-content: center;
+}
+
+.location a {
+    color: black;
 }
 
 /* Ocultar o menu de navegação em dispositivos móveis */
@@ -149,7 +173,8 @@ footer p {
 
 /* Estilo do botão "hamburger" */
 #menu-toggle {
-    display: block; /* Torna visível em dispositivos móveis */
+    display: block;
+    /* Torna visível em dispositivos móveis */
     background: none;
     border: none;
     cursor: pointer;
@@ -162,7 +187,7 @@ footer p {
 .hamburger {
     content: "";
     display: block;
-    background-color: #333; 
+    background-color: #333;
     margin: 5px 0;
     transition: 0.4s;
 }
