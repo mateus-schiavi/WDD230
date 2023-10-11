@@ -1,5 +1,11 @@
 @media (max-width: 640px) {
+
+    body {
+        background-color: rgb(245, 222, 179);
+    }
+
     nav {
+        color: black;
         flex-direction: column;
         align-items: flex-start;
         padding: 1rem;
@@ -40,5 +46,14 @@
     .work img,
     .things img {
         max-width: 100%;
+    }
+
+    header {
+        background-color: rgb(255, 165, 0);
+    }
+
+    footer {
+        color: black;
+        background-color: rgb(255, 165, 0);
     }
 }

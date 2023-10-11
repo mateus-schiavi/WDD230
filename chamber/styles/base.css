@@ -26,6 +26,9 @@ body {
     background-color: var(--color3);
     color: var(--color4);
     line-height: 1.6;
+    max-width: 1485px;
+    margin: 0 auto;
+    background-color: aquamarine;
 }
 
 header {
@@ -62,13 +65,14 @@ ul.nav li {
 }
 
 main {
-    max-width: 960px;
+    max-width: 1485px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
 h1,
 h2 {
+    color: black;
     display: flex;
     justify-content: center;
     font-family: var(--font2);
@@ -143,11 +147,17 @@ footer {
 #section-news p {
     display: flex;
     justify-content: center;
+    color: black;
 }
 
 .section-box p {
+    color: black;
     display: flex;
     text-align: center;
+}
+
+.section-box .work-day {
+    display: flex;
     justify-content: center;
 }
 
