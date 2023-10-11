@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 640px) {
     nav {
         flex-direction: column;
         align-items: flex-start;
@@ -19,7 +19,26 @@
     }
 
     ul.nav {
-        display: none;
+        display: flex;
     }
-    
+
+    #explore {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+
+    .exploration,
+    .university,
+    .work,
+    .things {
+        text-align: center;
+    }
+
+    .exploration img,
+    .university img,
+    .work img,
+    .things img {
+        max-width: 100%;
+    }
 }

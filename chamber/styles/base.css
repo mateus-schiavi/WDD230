@@ -53,13 +53,12 @@ nav a {
 ul.nav {
     list-style: none;
     display: flex;
-    /* Altere para flex para alinhar horizontalmente */
     align-items: center;
 }
 
 ul.nav li {
     margin: 0 0.5rem;
-    /* Espaçamento entre os itens da lista */
+
 }
 
 main {
@@ -140,11 +139,36 @@ footer {
     position: relative;
 }
 
-#menu::before {
-    content: "≡";
-    font-size: 2rem;
+
+#section-news p {
+    display: flex;
+    justify-content: center;
 }
 
-#menu.open::before {
-    content: "✖️";
+.section-box p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#explore {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+}
+
+.exploration,
+.university,
+.work,
+.things {
+    text-align: center;
+}
+
+.exploration img,
+.university img,
+.work img,
+.things img {
+    max-width: 100%;
+    height: auto;
 }
