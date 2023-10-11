@@ -49,11 +49,12 @@
     }
 
     header {
-        background-color: rgb(255, 165, 0);
+        background-color: rgb(50,205,50);
     }
 
     footer {
+        font-weight: bold;
         color: black;
-        background-color: rgb(255, 165, 0);
+        background-color: rgb(50,205,50);
     }
 }

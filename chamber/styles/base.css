@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Young+Serif&display=swap');
+
 :root {
     --color1: #008000;
     --color2: #FFFF00;
@@ -22,7 +25,7 @@ li {
 }
 
 body {
-    font-family: var(--font1);
+    font-family: var(--font2);
     background-color: var(--color3);
     color: var(--color4);
     line-height: 1.6;
@@ -36,6 +39,10 @@ header {
     color: var(--color3);
     text-align: center;
     padding: 1rem 0;
+}
+
+header h1 {
+    font-family: 'Young Serif';
 }
 
 nav {
@@ -72,6 +79,7 @@ main {
 
 h1,
 h2 {
+    font-weight: lighter;
     color: black;
     display: flex;
     justify-content: center;
@@ -96,6 +104,7 @@ section img {
 }
 
 footer {
+    font-family: var(--font3);
     background-color: var(--color1);
     color: var(--color3);
     text-align: center;
@@ -181,4 +190,9 @@ footer {
 .things img {
     max-width: 100%;
     height: auto;
+}
+
+.location a {
+    font-weight: bold;
+    color: black;
 }
