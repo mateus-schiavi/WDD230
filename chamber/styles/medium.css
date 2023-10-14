@@ -1,4 +1,4 @@
-@media (max-width: 640px) {
+@media (max-width: 740px) {
 
     body {
         background-color: rgb(245, 222, 179);
@@ -49,12 +49,16 @@
     }
 
     header {
-        background-color: rgb(50,205,50);
+        background-color: rgb(50, 205, 50);
     }
 
     footer {
         font-weight: bold;
         color: black;
-        background-color: rgb(50,205,50);
+        background-color: rgb(50, 205, 50);
+    }
+
+    #mode {
+        font-size: 35px;
     }
 }
