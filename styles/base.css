@@ -156,3 +156,13 @@ h2:after {
     justify-content: center;
     text-align: center;
 }
+
+.temple-image img {
+    width: 100%; 
+    height: auto; 
+    margin: 0 auto; 
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
