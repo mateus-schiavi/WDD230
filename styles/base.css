@@ -157,12 +157,29 @@ h2:after {
     text-align: center;
 }
 
-.temple-image img {
-    width: 100%; 
-    height: auto; 
-    margin: 0 auto; 
-    max-width: 800px;
+
+. {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.centered-picture {
+    display: block;
+    margin: 0px auto;
+
+}
+
+.temple-image {
+    position: relative;
+}
+
+.temple-label {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    background: rgba(0, 0, 0, 0.11);
+    color: white; 
+    padding: 5px;
+    font-family: 'Cursiva', cursive;
 }
