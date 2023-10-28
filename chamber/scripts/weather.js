@@ -20,12 +20,12 @@ function fetchWeather() {
             const windChillKelvin = windChillCelsius + 273.15;
 
             // Update the temperature and wind chill values in the footer
-            document.getElementById('celsius').textContent = temperatureCelsius.toFixed(2);
-            document.getElementById('fahrenheit').textContent = temperatureFahrenheit.toFixed(2);
-            document.getElementById('kelvin').textContent = data.main.temp.toFixed(2);
-            document.getElementById('windchill-celsius').textContent = windChillCelsius.toFixed(2);
-            document.getElementById('windchill-fahrenheit').textContent = windChillFahrenheit.toFixed(2);
-            document.getElementById('windchill-kelvin').textContent = windChillKelvin.toFixed(2);
+            document.getElementById('celsius').textContent = temperatureCelsius.toFixed(0);
+            document.getElementById('fahrenheit').textContent = temperatureFahrenheit.toFixed(0);
+            document.getElementById('kelvin').textContent = data.main.temp.toFixed(0);
+            document.getElementById('windchill-celsius').textContent = windChillCelsius.toFixed(0);
+            document.getElementById('windchill-fahrenheit').textContent = windChillFahrenheit.toFixed(0);
+            document.getElementById('windchill-kelvin').textContent = windChillKelvin.toFixed(0);
         })
         .catch((error) => {
             console.error('Error fetching weather data: ' + error);
