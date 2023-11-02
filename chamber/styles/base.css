@@ -341,3 +341,14 @@ section img {
   .recipe h3 {
     text-align: center; /* Centraliza o texto dentro do elemento h3 */
   }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    margin: 0 auto; /* Centraliza o elemento na largura da página */
+    max-width: 800px; /* Define uma largura máxima para o conteúdo centralizado */
+    color: black;
+}
