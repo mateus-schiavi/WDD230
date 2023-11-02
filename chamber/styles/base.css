@@ -206,3 +206,138 @@ footer {
     font-weight: bold;
     color: black;
 }
+
+/* Estilos para o layout de duas colunas */
+main {
+    display: flex; /* Usando flexbox para criar o layout de duas colunas */
+}
+
+.sidebar {
+    flex: 1; /* A barra lateral ocupa 1 unidade de flex */
+    background-color: #f2f2f2; /* Cor de fundo da barra lateral (opcional) */
+    padding: 20px; /* Espaçamento interno da barra lateral (opcional) */
+}
+
+section {
+    flex: 2; /* A seção principal ocupa 2 unidades de flex */
+    padding: 20px; /* Espaçamento interno da seção principal (opcional) */
+}
+
+.month {
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.month-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.days-of-week {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.days span {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.center-title {
+    text-align: center;
+}
+
+#calendar {
+    text-align: center; /* Centraliza o conteúdo do elemento */
+    margin: 0 auto;     /* Centraliza o elemento horizontalmente na página */
+}
+
+#calendar-title {
+    text-align: center; /* Centraliza o texto do título horizontalmente */
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#prev-month,
+#next-month {
+    /* Remova quaisquer margens ou padding padrão que possam afetar a centralização */
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex; /* Use um display flex para alinhar as imagens na vertical */
+    flex-direction: column; /* Alinhe as imagens na vertical */
+  }
+  
+  section img {
+    width: 100%; /* Define um tamanho fixo para as imagens, ocupando toda a largura da seção */
+    margin-bottom: 50px; /* Adicione margem inferior de 50px para criar o espaçamento */
+  }
+
+  /* Adicione este CSS no seu arquivo de estilos (por exemplo, base.css) */
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+section img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+
+.image-container div {
+    color: black;
+}
+
+.next-game p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.next-game img {
+    display: block;
+   margin: 0 auto;
+    height: auto;
+    width: 300px;
+}
+
+.recipe img {
+    display: block;
+    margin: 0 auto;
+     height: auto;
+     width: 300px;
+}
+
+
+.sidebar {
+    color: black;
+}
+
+.recipe {
+    text-align: justify; /* Define o texto dentro da div como justificado */
+  }
+  
+  .recipe h3 {
+    text-align: center; /* Centraliza o texto dentro do elemento h3 */
+  }
