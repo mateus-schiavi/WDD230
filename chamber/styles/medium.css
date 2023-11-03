@@ -1,6 +1,8 @@
 @media (max-width: 740px) {
 
     body {
+        display: flex;
+        flex-direction: column;
         background-color: rgb(245, 222, 179);
     }
 

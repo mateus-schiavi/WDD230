@@ -78,3 +78,37 @@ const images = document.querySelectorAll("img");
 images.forEach((img) => {
   img.setAttribute("loading", "lazy");
 });
+
+// Função para obter a data da última visita do usuário armazenada no armazenamento local
+function getUltimaVisita() {
+    const dataVisitaAnterior = localStorage.getItem('ultimaVisita');
+    if (dataVisitaAnterior) {
+      return new Date(dataVisitaAnterior);
+    } else {
+      return null; // Se não houver data de visita anterior, retorna nulo
+    }
+  }
+  
+  function verificarIntervaloVisita() {
+    const dataAtual = new Date();
+    const dataUltimaVisita = getUltimaVisita();
+    const visitaMessage = document.getElementById("visit-message");
+  
+    if (dataUltimaVisita) {
+      const diffDays = Math.floor((dataAtual - dataUltimaVisita) / (1000 * 60 * 60 * 24)); // Calcula a diferença em dias
+      if (diffDays < 1) {
+        visitaMessage.textContent = "Welcome Back!";
+      } else {
+        visitaMessage.textContent = `You visited the site ${diffDays} days ago!`;
+      }
+    } else {
+      visitaMessage.textContent = "This is your first visit!";
+    }
+  
+    // Armazena a data atual como a nova data de última visita
+    localStorage.setItem('ultimaVisita', dataAtual);
+  }
+  
+  // Chame a função para verificar o intervalo de visita
+  verificarIntervaloVisita();
+  

@@ -115,6 +115,7 @@ section img {
 }
 
 footer {
+    font-weight: bold;
     font-family: var(--font3);
     background-color: var(--color1);
     color: var(--color3);
@@ -207,4 +208,23 @@ footer {
     color: black;
 }
 
+figcaption {
+    color: black;
+}
 
+table td img {
+    transition: transform 0.2s; /* Adiciona uma transição suave para o efeito */
+}
+
+/* Aplica o efeito de zoom quando o mouse passa por cima da imagem */
+table td img:hover {
+    transform: scale(1.1); /* Aumenta a escala para 1.25x o tamanho original */
+}
+
+.visit-message {
+    text-align: center; /* Centraliza horizontalmente */
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+}
