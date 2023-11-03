@@ -1,65 +1,47 @@
 @media (max-width: 740px) {
-
     body {
         display: flex;
         flex-direction: column;
         background-color: rgb(245, 222, 179);
     }
-
     nav {
         color: black;
         flex-direction: column;
         align-items: flex-start;
         padding: 1rem;
     }
-
     nav ul {
         margin-top: 1rem;
     }
-
     nav a {
         display: block;
         margin: 1rem 0;
     }
-
     #menu-toggle {
         display: block;
     }
-
     ul.nav {
         display: flex;
     }
-
     #explore {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 10px;
     }
-
-    .exploration,
-    .university,
-    .work,
-    .things {
+    .exploration, .university, .work, .things {
         text-align: center;
     }
-
-    .exploration img,
-    .university img,
-    .work img,
-    .things img {
+    .exploration img, .university img, .work img, .things img {
         max-width: 100%;
     }
-
     header {
         background-color: rgb(50, 205, 50);
     }
-
     footer {
         font-weight: bold;
         color: black;
         background-color: rgb(50, 205, 50);
     }
-
     #mode {
         font-size: 35px;
     }

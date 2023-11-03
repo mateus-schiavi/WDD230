@@ -6,22 +6,14 @@
         --color4: #808080;
         --color5: #0000FF;
         --color6: #000080;
-    
         --font1: 'Young Serif', sans-serif;
         --font2: 'Poppins Light', sans-serif;
         --font3: 'Inconsolata', sans-serif;
     }
-    
-    body,
-    h1,
-    h2,
-    p,
-    ul,
-    li {
+    body, h1, h2, p, ul, li {
         margin: 0;
         padding: 0;
     }
-    
     body {
         font-family: var(--font1);
         background-color: var(--color3);
@@ -31,14 +23,12 @@
         margin: 0 auto;
         background-color: aquamarine;
     }
-    
     header {
         background-color: var(--color1);
         color: var(--color3);
         text-align: center;
         padding: 1rem 0;
     }
-    
     nav {
         display: flex;
         align-items: center;
@@ -47,95 +37,75 @@
         margin: 0 auto;
         padding: 0 1rem;
     }
-    
     nav a {
         color: var(--color3);
         text-decoration: none;
         margin: 0 1rem;
     }
-    
     ul.nav {
         list-style: none;
         display: flex;
         align-items: center;
     }
-    
     ul.nav li {
         margin: 0 0.5rem;
-    
     }
-    
     main {
         max-width: 1485px;
         margin: 2rem auto;
         padding: 0 1rem;
     }
-    
-    h1,
-    h2 {
+    h1, h2 {
         color: black;
         display: flex;
         justify-content: center;
         font-family: var(--font2);
     }
-    
     section {
         margin-bottom: 2rem;
     }
-    
     section img {
         max-width: 100%;
         height: auto;
         display: block;
         margin: 0 auto;
     }
-    
     .image {
         display: flex;
         width: 200px;
         border-radius: 50px;
     }
-    
     footer {
         background-color: var(--color1);
         color: var(--color3);
         text-align: center;
         padding: 1rem 0;
     }
-    
     #join {
         display: flex;
         justify-content: center;
     }
-    
     #join a {
         margin-top: 5px;
         background-color: black;
         color: white;
     }
-    
     #join a:hover {
         background-color: red;
     }
-    
-    
     #menu-toggle {
         display: none;
         background: none;
         border: none;
         cursor: pointer;
     }
-    
     .bar {
         width: 30px;
         height: 3px;
         background-color: var(--color2);
-        /* Cor das barras */
         margin: 6px 0;
         transition: 0.4s;
     }
-    
-    
     #menu {
         font-size: 1.5rem;
         padding: 3px 7px 6px;
@@ -143,43 +113,30 @@
         color: #dbdce0;
         position: relative;
     }
-    
-    
     #section-news p {
         display: flex;
         justify-content: center;
         color: black;
     }
-    
     .section-box p {
         color: black;
         display: flex;
         text-align: center;
     }
-    
     .section-box .work-day {
         display: flex;
         justify-content: center;
     }
-    
     #explore {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
         gap: 20px;
     }
-    
-    .exploration,
-    .university,
-    .work,
-    .things {
+    .exploration, .university, .work, .things {
         text-align: center;
     }
-    
-    .exploration img,
-    .university img,
-    .work img,
-    .things img {
+    .exploration img, .university img, .work img, .things img {
         max-width: 100%;
         height: auto;
     }
