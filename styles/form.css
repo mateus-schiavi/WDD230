@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  form {
+    text-align: left; /* Alinhe o texto à esquerda no formulário */
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  label {
+    display: block; /* Faz com que os rótulos se comportem como blocos */
+    width: 100%; /* Ocupa 100% da largura do contêiner pai (form) */
+    text-align: left; /* Alinhe o texto do rótulo à esquerda */
+  }
+  
+  input {
+    width: 100%;
+  }
+  

@@ -1,0 +1,46 @@
+/* form.css */
+
+/* Position: Defina a posição dos elementos no formulário */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Alignment: Alinhe o conteúdo dos rótulos e campos de entrada */
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+  
+  /* Repetition: Aplique estilos consistentes aos elementos repetidos */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Contrast: Crie contraste para destacar elementos importantes */
+  h1 {
+    color: #333;
+  }
+  
+  button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

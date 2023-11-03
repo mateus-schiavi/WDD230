@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="course assignment portal for WDD 230 - Mateus Schiavi">
+        <meta name="author" content="Mateus Schiavi">
+        <meta property="og:title" content="Mateus Schiavi - WDD230 - Web Frontend Development">
+        <meta property="og:description" content="Assignment for WDD230 - Web Frontend Development">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/form.css">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./styles/normalize.css">
+        <link rel="stylesheet" href="./styles/parc.css">
+        <title>Person Registration Form</title>
+    </head>
+
+    <body>
+        <h1>Person Registration Form</h1>
+        <form id="registrationForm" action="record.html" method="get">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
+            <br><br>
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" required><br><br>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br><br>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required
+                pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$"><br><br>
+
+            <button type="submit" onclick="submitForm()">Register</button>
+        </form>
+
+        <a href="record.html">View Confirmation</a>
+
+        <script src="./scripts/form.js"></script>
+    </body>
+
 </html>
