@@ -6,13 +6,14 @@ function registerPerson() {
     const state = document.getElementById("state").value;
 
     if (name.trim() === "" || age <= 0 || email.trim() === "" || city.trim() === "" || state.trim() === "") {
-        alert("Please fill in all the fields with valid information.");
+        alert("Please fill in all the required fields.");
         return;
     }
 
     alert("Registration successful:\nName: " + name + "\nAge: " + age + "\nEmail: " + email + "\nCity: " + city + "\nState: " + state);
     document.getElementById("registrationForm").reset();
 }
+
 
 // confirmation.js
 
@@ -33,10 +34,17 @@ function submitForm() {
     var id = document.getElementById("id").value;
     var city = document.getElementById("city").value;
     var state = document.getElementById("state").value;
-  
+
+    // Verificar se algum campo está vazio
+    if (name.trim() === "" || age.trim() === "" || email.trim() === "" || id.trim() === "" || city.trim() === "" || state.trim() === "") {
+        alert("Please fill all the fields.");
+        return;
+    }
+
     // Redirecionar o usuário para a página de confirmação com os parâmetros na URL
     window.location.href = "record.html?name=" + name + "&age=" + age + "&email=" + email + "&id=" + id + "&city=" + city + "&state=" + state;
-  }
+}
+
 
   // Extrair parâmetros da URL
 var params = new URLSearchParams(window.location.search);
