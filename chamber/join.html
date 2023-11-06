@@ -52,11 +52,20 @@
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" pattern="[a-zA-Z0-9\s\-]{7,}" required>
 
+                    <label for="name">Surname:</label>
+                    <input type="text" id="surname" name="name" pattern="[a-zA-Z0-9\s\-]{7,}" required>
+
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address">
+
+                    <label for="number">Number:</label>
+                    <input type="text" id="number" name="number" pattern="[0-9]*">
+
                     <label for="email">Email:</label>
-                    <input type="text" id="email" name="email">
+                    <input type="email" id="email" name="email">
 
                     <label for="phone">Phone:</label>
-                    <input type="text" id="phone" name="phone">
+                    <input type="tel" id="phone" name="phone">
 
                     <label for="comments">Comments:</label>
                     <input type="text" id="comments" name="comments">
@@ -81,7 +90,8 @@
                         id="fahrenheit"></span>°F | <span id="kelvin"></span>K
                 </p>
                 <p>Wind Chill: <span id="windchill-celsius"></span>°C | <span id="windchill-fahrenheit"></span>°F |
-                    <span id="windchill-kelvin"></span>K</p>
+                    <span id="windchill-kelvin"></span>K
+                </p>
                 <p>Contact: +1 408 314 2718 / +1 408 112 3581</p>
             </div>
         </footer>
