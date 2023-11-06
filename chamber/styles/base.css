@@ -273,3 +273,7 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+.zip-code {
+    width: 100%;
+}
