@@ -74,6 +74,41 @@
                     <label for="comments">Comments:</label>
                     <textarea id="comments" name="comments"></textarea>
 
+                    <label for="membership">Membership Level:</label>
+                    <select id="membership" name="membership">
+                        <optgroup label="Basic Membership - $50/month">
+                            <option value="basic">Basic</option>
+                            <option value="basic" disabled>Advantages:</option>
+                            <option value="basic-advantage1" disabled>1. Access to members-only content</option>
+                            <option value="basic-advantage2" disabled>2. Monthly networking events</option>
+                            <option value="basic-advantage3" disabled>3. Business resources and guides</option>
+                        </optgroup>
+                        <optgroup label="Premium Membership - $100/month">
+                            <option value="premium">Premium</option>
+                            <option value="premium" disabled>Advantages:</option>
+                            <option value="premium-advantage1" disabled>1. Exclusive networking events</option>
+                            <option value="premium-advantage2" disabled>2. Priority support and assistance</option>
+                            <option value="premium-advantage3" disabled>3. Access to premium industry reports</option>
+                        </optgroup>
+                        <optgroup label="Gold Membership - $200/month">
+                            <option value="gold">Gold</option>
+                            <option value="gold" disabled>Advantages:</option>
+                            <option value="gold-advantage1" disabled>1. Priority business listings</option>
+                            <option value="gold-advantage2" disabled>2. Personalized business consultations</option>
+                            <option value="gold-advantage3" disabled>3. Access to international trade events</option>
+                        </optgroup>
+                        <optgroup label="Platinum Membership - $300/month">
+                            <option value="platinum">Platinum</option>
+                            <option value="platinum" disabled>Advantages:</option>
+                            <option value="platinum-advantage1" disabled>1. Personalized business assistance</option>
+                            <option value="platinum-advantage2" disabled>2. Access to exclusive executive events
+                            </option>
+                            <option value="platinum-advantage3" disabled>3. International business support</option>
+                        </optgroup>
+                    </select>
+
+
+
                     <input type="hidden" name="hidden_field" value="hidden_value">
 
                     <button type="submit">Submit</button>
