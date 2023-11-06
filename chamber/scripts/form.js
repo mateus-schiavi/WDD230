@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
         const addressValue = document.getElementById("address").value;
         const numberValue = document.getElementById("number").value;
         const surnameValue = document.getElementById("surname").value;
-        
+        const zipcodeValue = document.getElementById("zip-code").value;
         // Verifique se algum dos campos está vazio
-        if (nameValue === "" || emailValue === "" || phoneValue === "" || commentsValue === "" || addressValue === "" || numberValue === "" || surnameValue === "") {
+        if (nameValue === "" || emailValue === "" || phoneValue === "" || commentsValue === "" || addressValue === "" || numberValue === "" || surnameValue === "" || zipcodeValue === "") {
             // Exiba uma mensagem de erro
             alert("Please fulfill all the fields to join us.");
             event.preventDefault(); // Impede o envio do formulário
