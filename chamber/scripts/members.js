@@ -10,9 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 const div = document.createElement("div");
                 div.classList.add("business");
 
-                const img = document.createElement("img");
-                img.src = business.image;
-                img.alt = business.name;
 
                 const name = document.createElement("h2");
                 name.textContent = business.name;
@@ -31,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 const membership = document.createElement("p");
                 membership.textContent = "Membership Level: " + business.membershiplevel;
 
-                div.appendChild(img);
                 div.appendChild(name);
                 div.appendChild(phone);
                 div.appendChild(address);

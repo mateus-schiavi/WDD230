@@ -5,7 +5,7 @@
             "phone": "+55  (85) 3477-3560",
             "address": "85 Washignton Soares Avenue",
             "website": "https://www.igtfortaleza.com.br",
-            "image": "../images/iguatemi_shopping.png",
+            
             "membershiplevel": "Platinum"
         },
         {
@@ -13,7 +13,7 @@
             "phone": "+55  (85) 3243-1000",
             "address": "2200 Carapinima Avenue",
             "website": "https://shoppingbenfica.com.br",
-            "image": "../images/shopping_benfica.png",
+           
             "membershiplevel": "Platinum"
         },
         {
@@ -21,7 +21,7 @@
             "phone": "+55 (85) 3241-4100",
             "address": "430 Filomeno Gomes Avenue",
             "website": "https://www.centrofashion.com.br",
-            "image": "../images/centro_fashion.png",
+           
             "membershiplevel": "Gold"
         },
         {
@@ -29,7 +29,7 @@
             "phone": "+55 (85) 99924-0001",
             "address": "1011 Desembargador Moreira Avenue",
             "website": "https://jardinsopenmall.com.br",
-            "image": "../images/jardins_open_mall.png",
+            
             "membershiplevel": "Gold"
         },
         {
@@ -37,7 +37,7 @@
             "phone": "+55 (85) 3066-2002",
             "address": "1500 Desembargador Lauro Nogueira street",
             "website": "https://riomarfortaleza.com.br",
-            "image": "../images/RioMar.png",
+          
             "membershiplevel": "Premium"
         },
         {
@@ -45,7 +45,7 @@
             "phone": "+55 (85) 9181- 5411",
             "address": "2001 Duque de Caxias Avenue",
             "website": "https://oficinaodamiao.com.br",
-            "image": "../images/oficina_damiao.png",
+            
             "membershiplevel": "Basic"
         },
         {
@@ -53,7 +53,7 @@
             "phone": "+55 (85) 99617-1019",
             "address": "320 Joaquim Manoel de Macedo street",
             "website": "https://www.lojaspontodamoda.com.br",
-            "image": "../images/ponto_da_moda.png",
+
             "membershiplevel": "Basic"
         }
     ]
