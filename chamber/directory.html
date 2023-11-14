@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a Fortaleza Chamber of Commerce developed by Mateus Schiavi">
+        <meta name="author" content="Mateus de Sousa Schiavi">
+        <meta property="og:url" content="https://mateus-schiavi.github.io/wdd230/chamber/">
+        <meta property="og:title" content="Fortaleza Chamber of Commerce">
+        <meta name="author" content="Mateus de Sousa Schiavi">
+        <meta property="og:image"
+            content="https://www.praiasdefortaleza.net/wp-content/uploads/2016/09/Um-City-tour-por-Fortaleza-1.jpg">
+        <meta property="og:description" content="Fortaleza Chamber of Commerce built by Mateus Schiavi">
+        <meta property="og:type" content="website">
+        <title>Fortaleza's Travel Agency Chamber of Commerce</title>
+        <link rel="icon" href="./images/fortaleza_hero-img.jpg">
+        <link rel="stylesheet" href="./styles/normalize.css">
+        <link rel="stylesheet" href="./styles/base.css">
+        <link rel="stylesheet" href="./styles/medium.css">
+        <link rel="stylesheet" href="./styles/larger.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Young+Serif&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a id="linked_logo" href="index.html">
+                    <img class="image" src="./images/fortaleza.jpg" alt="Fortaleza's Logo"
+                        title="Fortaleza Chamber of Commerce">
+                </a>
+                <div class="nav-content">
+                    <h1>Fortaleza Chamber of Commerce</h1>
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                    </ul>
+                </div>
+                <div id="mode">
+                    🌑
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="business-container">
+
+            </div>
+        </main>
+        <footer>
+            <section class="location">
+                <h2>Information</h2>
+                <a target="_blank" href="https://maps.app.goo.gl/49FpGPTv9FpUVMxB6">📌 Location Map</a>
+            </section>
+            <div id="temperature-info">
+                <p>
+                    &copy;<span id="Year">2023</span> | Mateus Schiavi | Last Updated:
+                    <span id="Modified"></span>
+                </p>
+                <p id="temperature">Temperature in Fortaleza City: <span id="celsius"></span>°C | <span
+                        id="fahrenheit"></span>°F | <span id="kelvin"></span>K
+                </p>
+                <p>Wind Chill: <span id="windchill-celsius"></span>°C | <span id="windchill-fahrenheit"></span>°F |
+                    <span id="windchill-kelvin"></span>K</p>
+                <p>Contact: +1 408 314 2718 / +1 408 112 3581</p>
+            </div>
+        </footer>
+        <script src="./scripts/hamButton.js"></script>
+        <script src="./scripts/weather.js"></script>
+        <script src="../chamber/scripts/members.js"></script>
+    </body>
+
+</html>
