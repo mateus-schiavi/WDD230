@@ -1,0 +1,63 @@
+header {
+    background-color: hsl(120, 100%, 25%); /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav li {
+    margin: 0 15px;
+    display: inline;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para a seção de negócios */
+#business-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.business {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: hsl(120, 100%, 25%); /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
