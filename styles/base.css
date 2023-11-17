@@ -109,6 +109,7 @@ h2:after {
 }
 
 .card-info {
+    font-size: 25px;
     border: 1px solid rgb(207, 207, 207);
 
 }
