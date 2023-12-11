@@ -1,0 +1,100 @@
+/* Reset de Estilos */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Estilos do cabeçalho */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation ul li {
+    margin-right: 20px;
+    display: inline;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.navigation ul li a:hover {
+    color: #1E3A5F;
+}
+
+/* Estilos do conteúdo principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Centering the content within the main div */
+}
+
+.cozumel-label {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center; /* Centering the content within each card */
+}
+
+.card-info ul {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Resetting the text alignment for the list */
+}
+
+.card-info ul li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.map {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    clear: both;
+}
+
+.weather {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    clear: both; /* Para garantir que fique abaixo dos elementos anteriores */
+}
+
