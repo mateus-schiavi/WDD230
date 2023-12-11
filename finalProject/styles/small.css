@@ -1,0 +1,19 @@
+@media screen and (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        padding: 5px 0;
+    }
+}

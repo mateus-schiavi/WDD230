@@ -1,96 +1,100 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Portal for exploring Cozumel - by Mateus de Sousa Schiavi">
-    <meta name="author" content="Mateus de Sousa Schaivi">
-    <meta property="og:title" content="Your Name - Explore Cozumel">
-    <meta property="og:description" content="Explore the beauty of Cozumel">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://your-website-url.com">
-    <meta property="og:img" content="https://link-to-your-image.com">
+        <meta name="description" content="Portal for exploring Cozumel - by Mateus de Sousa Schiavi">
+        <meta name="author" content="Mateus de Sousa Schaivi">
+        <meta property="og:title" content="Your Name - Explore Cozumel">
+        <meta property="og:description" content="Explore the beauty of Cozumel">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://mateus-schiavi.github.io/wdd230/index.html">
+        <meta property="og:img" content="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap">
-    <link rel="stylesheet" href="./styles/base.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/base.css">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./styles/small.css">
 
-    <title>Your Name - Explore Cozumel</title>
-</head>
+        <title>Final Project - Home Page</title>
+    </head>
 
-<body>
-    <header>
-        <h1>
-            <img class="photo" src="./images/Cozumel_2.jpg" alt="Cozumel Photo">
-        </h1>
-    </header>
-    <nav class="navigation">
-        <ul>
-            <li><a href="./index.html" class="active">Home</a></li>
-            <li><a href="./cozumel.html">About Cozumel</a></li>
-            <li><a href="./rental.html">Rent a Vehicle With Us</a></li>
-        </ul>
-    </nav>
+    <body>
+        <header>
+            <h1>
+                <img class="photo" src="./images/Cozumel_2.jpg" alt="Cozumel Photo">
+            </h1>
+        </header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./cozumel.html">About Cozumel</a></li>
+                <li><a href="./rental.html">Rent a Vehicle With Us</a></li>
+            </ul>
+        </nav>
 
-    <main>
-        <div class="cozumel-image">
+        <main>
+            <div class="cozumel-image">
 
-            <div class="cozumel-label">
-                <p>Explore the Beauty of Cozumel</p>
+                <div class="cozumel-label">
+                    <p>Explore the Beauty of Cozumel</p>
+                </div>
             </div>
+            <h2>Discover Cozumel: An Island Paradise</h2>
+            <section class="card-info">
+                <h3>Top Vehicles to Rent</h3>
+                <p>We offer a variety of rental options to suit your needs:</p>
+                <ul>
+                    <li>Honda Metro Scooter</li>
+                    <li>Honda Dio Scooter</li>
+                    <li>Honda PCX 150 Scooter</li>
+                    <li>Honda Pionner ATV</li>
+                    <li>Jeep Wrangler - 4 door with a/c</li>
+                    <li>Jeep Wrangler - 2 door</li>
+                </ul>
+                <p>Contact us for more information on each rental type and pricing.</p>
+            </section>
+            <section class="card-info">
+                <h3>Contact Information</h3>
+                <p>For inquiries and bookings, reach out to us:</p>
+                <ul>
+                    <li>Phone: +52 55 1234 5678</li>
+                    <li>Email: cozumel_rentals@gmail.com</li>
+                </ul>
+            </section>
+            <section class="card-info">
+                <h3>Useful Information</h3>
+                <p>
+                    <span class="weather-info">
+                        Weather in Cozumel:
+                        <span id="temperature-value"></span><br>
+                        <span id="wind-chill-value"></span><br>
+                        <img id="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather Icon">
+                    </span>
+                </p>
+            </section>
+        </main>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.484444654032!2d-86.9613058849494!3d20.422836986337153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e590c23c4ca47%3A0x2a3b7d6c6c8d7ff7!2sCozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1696000879253!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <h2>Discover Cozumel: An Island Paradise</h2>
-        <section class="card-info">
-            <h3>Top Vehicles to Rent</h3>
-            <p>We offer a variety of rental options to suit your needs:</p>
-            <ul>
-                <li>Honda Metro Scooter</li>
-                <li>Honda Dio Scooter</li>
-                <li>Honda PCX 150 Scooter</li>
-                <li>Honda Pionner ATV</li>
-                <li>Jeep Wrangler - 4 door with a/c</li>
-                <li>Jeep Wrangler - 2 door</li>
-            </ul>
-            <p>Contact us for more information on each rental type and pricing.</p>
-        </section>
-        <section class="card-info">
-            <h3>Contact Information</h3>
-            <p>For inquiries and bookings, reach out to us:</p>
-            <ul>
-                <li>Phone: +52 55 1234 5678</li>
-                <li>Email: cozumel_rentals@gmail.com</li>
-            </ul>
-        </section>
-        <section class="card-info">
-            <h3>Useful Information</h3>
-            <p>
-                <span class="weather-info">
-                    Weather in Cozumel:
-                    <span id="temperature-value"></span>
-                    <br><br>
-                    <img id="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather Icon">
-                </span>
-            </p>
-        </section>
-    </main>
-    <div class="map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.484444654032!2d-86.9613058849494!3d20.422836986337153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e590c23c4ca47%3A0x2a3b7d6c6c8d7ff7!2sCozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1696000879253!5m2!1sen!2sus"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <footer>
-        <div>
-            <p class="information">
-                &copy; <span id="Year"></span> | Mateus de Sousa Schiavi | Last Updated:
-                <span id="Modified"></span>
-            </p>
-        </div>
-    </footer>
-    <script src="./scripts/getDate.js"></script>
-    <script src="./scripts/getWeather.js"></script>
-</body>
+        <footer>
+            <div>
+                <p class="information">
+                    &copy; <span id="Year"></span> | Mateus de Sousa Schiavi | Last Updated:
+                    <span id="Modified"></span>
+                </p>
+            </div>
+        </footer>
+        <script src="./scripts/getDate.js"></script>
+        <script src="./scripts/getWeather.js"></script>
+    </body>
 
 </html>

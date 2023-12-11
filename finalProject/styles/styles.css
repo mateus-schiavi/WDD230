@@ -1,39 +1,90 @@
 /* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 body {
+    font-family: 'Playfair Display', serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     height: 100vh;
     margin: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    width: 100%;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 .tables-container {
     display: flex;
-    justify-content: center; /* Alinha as tabelas horizontalmente */
-    flex-wrap: wrap; /* Permite que as tabelas sejam exibidas em várias linhas se necessário */
-    gap: 20px; /* Espaço entre as tabelas */
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 20px;
 }
 
 .table-wrapper {
-    text-align: center; /* Centralizar título */
-    flex: 1 1 300px; /* Define a largura mínima e máxima das tabelas */
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 table {
-    width: 100%; /* Torna a tabela ocupando toda a largura da div pai */
-    border: 2px solid #333; /* Adiciona uma borda para destacar */
+    width: 100%;
+    border: 2px solid #333;
     border-collapse: collapse;
-    margin-bottom: 10px; /* Espaçamento inferior */
+    margin-bottom: 10px;
 }
 
 th,
 td {
     border: 1px solid #ddd;
-    padding: 10px; /* Maior espaçamento interno */
+    padding: 10px;
 }
 
 th {
     background-color: #f2f2f2;
 }
 
+.payment-methods,
+.accepted-cards,
+.vehicle-info {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+.card-images img {
+    width: 175px;
+    margin: 0 5px;
+}
+
+.vehicle-details {
+    list-style: none; /* Remove os bullets */
+    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; /* Remove as margens padrão */
+}
+
+.vehicle-details li {
+    margin-bottom: 5px; /* Espaçamento entre os itens */
+}

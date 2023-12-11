@@ -8,13 +8,22 @@ function getWeatherData() {
         .then((response) => response.json())
         .then((data) => {
             const temperatureElement = document.getElementById('temperature-value');
+            const windChillElement = document.getElementById('wind-chill-value');
             const weatherIconElement = document.getElementById('weather-icon');
 
-            if (data.main && data.main.temp) {
+            if (data.main && data.main.temp && data.wind && data.wind.speed) {
                 const temperature = data.main.temp;
+                const windSpeed = data.wind.speed;
+
+                // Calculate wind chill
+                const windChill = calculateWindChill(temperature, windSpeed);
+
+                // Display temperature and wind chill
                 temperatureElement.textContent = temperature.toFixed(0) + '°C';
+                windChillElement.textContent = 'Wind Chill: ' + windChill.toFixed(0) + '°C';
             } else {
                 temperatureElement.textContent = 'N/A';
+                windChillElement.textContent = 'N/A';
             }
 
             if (data.weather && data.weather[0] && data.weather[0].icon) {
@@ -28,6 +37,11 @@ function getWeatherData() {
         .catch((error) => {
             console.error('Ocorreu um erro:', error.message);
         });
+}
+
+// Function to calculate wind chill (for metric units)
+function calculateWindChill(temperature, windSpeed) {
+    return 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
 }
 
 // Chama a função getWeatherData quando o conteúdo da página estiver carregado.
