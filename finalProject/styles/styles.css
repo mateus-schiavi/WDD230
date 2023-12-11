@@ -1,0 +1,37 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.tables-container {
+    display: flex;
+    justify-content: center; /* Alinha as tabelas horizontalmente */
+    flex-wrap: wrap; /* Permite que as tabelas sejam exibidas em várias linhas se necessário */
+    gap: 20px; /* Espaço entre as tabelas */
+}
+
+.table-wrapper {
+    text-align: center; /* Centralizar título */
+    flex: 1 1 300px; /* Define a largura mínima e máxima das tabelas */
+}
+
+table {
+    width: 100%; /* Torna a tabela ocupando toda a largura da div pai */
+    border: 2px solid #333; /* Adiciona uma borda para destacar */
+    border-collapse: collapse;
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px; /* Maior espaçamento interno */
+}
+
+th {
+    background-color: #f2f2f2;
+}
