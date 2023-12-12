@@ -1,51 +1,43 @@
 
 
 body {
-    font-family: 'Helvetica', Sans-Serif;
+    font-family: 'Helvetica', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     height: 100vh;
     margin: 0;
-    background-color: rgb(242, 242, 244);
+    background-color: #f2f2f4; /* Adjusted background color */
+    color: #333;
 }
 
-header {
+.header {
     width: 100%;
-    color: white;
+    color: #fff;
     padding: 10px 0;
     text-align: center;
+    background-color: #333;
+    margin-bottom: 20px; /* Add margin at the bottom */
 }
 
-header nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-}
-
-header nav ul li {
-    margin: 0 10px;
-}
-header nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
+/* Tables Container Styling */
 .tables-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
-    margin-top: 20px;
+    justify-content: center;
+    height: 50vh;
+    padding-top: 20px; /* Reduce top padding */
+    padding-bottom: 20px; /* Add bottom padding */
 }
 
+/* Table Wrapper Styling */
 .table-wrapper {
     text-align: center;
-    width: 100%;
+    width: 80%;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 table {
@@ -91,4 +83,104 @@ th {
 /* Último item da lista não justificado para evitar espaçamento estranho */
 .vehicle-details li:last-child {
     text-align: left;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select,
+input[type="number"],
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px; /* Largura desejada */
+    height: 80px; /* Altura desejada */
+    /* Se desejar centralizar a imagem verticalmente */
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100%; /* A imagem ocupará todo o espaço da div */
+    max-height: 100%; /* A imagem ocupará todo o espaço da div */
+    /* Se desejar centralizar a imagem horizontalmente */
+    margin: auto;
+}
+
+.navigation {
+    margin-left: 20px; /* Espaçamento entre a imagem e a navegação */
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navigation li {
+    margin-right: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white; /* Altere a cor conforme desejado */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Form Container Styling */
+.form-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }

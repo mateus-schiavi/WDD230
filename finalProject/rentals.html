@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scooter Rental - Gallery Page</title>
+        <meta name="author" content="Mateus de Sousa Schaivi">
+        <meta property="og:url" content="https://github.com/mateus-schiavi/wdd230/tree/main/finalProject">
+        <meta property="og:image"
+            content="https://r4t2s9v3.stackpathcdn.com/wp-content/uploads/2018/05/ilha-cozumel-mexico.jpg">
+        <meta property="og:title" content="Cozumel's Scooter Rental">
+        <meta property="og:description" content="Explore the beauty of Cozumel">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://github.com/mateus-schiavi/wdd230/blob/main/finalProject/gallery.html">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/small.css">
+        <link rel="stylesheet" href="./styles/normalize.css">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img class="photo" src="./images/Cozumel_2.jpg" alt="Cozumel Photo">
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="./index.html" class="active">Home</a></li>
+                    <li><a href="./cozumel.html">About Cozumel</a></li>
+                    <li><a href="./rentals.html">Rentals</a></li>
+                    <li><a href="./reservation.html">Do a Reservation</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="tables-container">
+                <div class="table-wrapper">
+                    <h2>Rental Price Table</h2>
+                    <table id="combined-table">
+                        <!-- Combined data will be inserted here -->
+                    </table>
+                </div>
+            </div>
+            <div class="vehicle-info">
+                <div class="vehicle-gallery">
+                    <div class="vehicle-item">
+                        <img src="./images/honda_metro_scooter.avif" alt="Honda Metro Scooter" loading="lazy">
+                        <div class="vehicle-description hidden">
+                            <!-- Detalhes do veículo -->
+                        </div>
+                    </div>
+                    <div class="vehicle-item">
+                        <img src="./images/honda_dio.webp" alt="Honda Dio Scooter" loading="lazy">
+                        <div class="vehicle-description">
+                            <!-- Detalhes do veículo -->
+                        </div>
+                    </div>
+                    <div class="vehicle-item">
+                        <img src="./images/honda_pcx (2).png" alt="Honda PCX 150" loading="lazy">
+                        <div class="vehicle-description">
+                            <!-- Detalhes do veículo -->
+                        </div>
+                    </div>
+                    <div class="vehicle-item">
+                        <img src="./images/honda_pioneer.avif" alt="Honda Pioneer ATV" loading="lazy">
+                        <div class="vehicle-description">
+                            <!-- Detalhes do veículo -->
+                        </div>
+                    </div>
+                    <div class="vehicle-item">
+                        <img src="./images/Jeep_Wrangler.avif" alt="Honda Pioneer ATV" loading="lazy">
+                        <div class="vehicle-description">
+                            <!-- Detalhes do veículo -->
+                        </div>
+                    </div>
+                    <div class="vehicle-item">
+                        <img src="./images/Jeep_Wrangler_2_door.jpg" alt="Honda Pioneer ATV" loading="lazy">
+                        <div class="vehicle-description">
+                            <!-- Detalhes do veículo -->
+                        </div>
+                    </div>
+                </div>
+        </main>
+
+        <footer>
+            <div>
+                <p class="information">
+                    &copy; <span id="Year"></span> | Mateus de Sousa Schiavi | Last Updated:
+                    <span id="Modified"></span>
+                </p>
+            </div>
+        </footer>
+        <script src="./scripts/getDate.js"></script>
+        <script src="./scripts/vehicle.js"></script>
+        <script src="./scripts/data.js"></script>
+    </body>
+
+</html>

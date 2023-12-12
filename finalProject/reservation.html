@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Mateus de Sousa Schaivi">
+        <meta property="og:url" content="https://github.com/mateus-schiavi/wdd230/tree/main/finalProject">
+        <meta property="og:image"
+            content="https://r4t2s9v3.stackpathcdn.com/wp-content/uploads/2018/05/ilha-cozumel-mexico.jpg">
+        <meta property="og:title" content="Cozumel's Scooter Rental">
+        <meta property="og:description" content="Explore the beauty of Cozumel">
+        <meta property="og:type" content="website">
+        <meta property="og:url"
+            content="https://github.com/mateus-schiavi/wdd230/blob/main/finalProject/reservation.html">
+        <meta property="og:img"
+            content="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="./styles/styles.css" rel="stylesheet">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
+        <title>Scooter Rental - Reservation Page</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img class="photo" src="./images/Cozumel_2.jpg" alt="Cozumel Photo">
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="./index.html" class="active">Home</a></li>
+                    <li><a href="./cozumel.html">About Cozumel</a></li>
+                    <li><a href="./rentals.html">Rentals</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form id="rental-form" class="form-container">
+                <div class="form-group">
+                    <label for="vehicle-type">Select Vehicle:</label>
+                    <select id="vehicle-type" name="vehicle-type">
+                        <option value="---------------">---------</option>
+                        <option value="Honda Metro Scooter">Honda Metro Scooter</option>
+                        <option value="Honda Dio Scooter">Honda Dio Scooter</option>
+                        <option value="Honda PCX 150 Scooter">Honda PCX 150 Scooter</option>
+                        <option value="Honda Pionner ATV">Honda Pioneer ATV</option>
+                        <option value="Jeep Wrangler - 4 door with a/c">Jeep Wrangler - 4 door with a/c</option>
+                        <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="duration">Duration:</label>
+                    <select id="duration" name="duration">
+                        <option value="-------">---------</option>
+                        <option value="half-day">Half-day</option>
+                        <option value="full-day">Full-day</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+
+                    <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+                    <label for="credit-card">Credit Card</label>
+                    <input type="radio" id="cash" name="payment-method" value="cash">
+                    <label for="cash">Cash</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="how-find">How did you find us?</label>
+                    <select id="how-find" name="how-find">
+                        <option value="Instagram">Instagram</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Youtube">Youtube</option>
+                        <option value="LinkedIn">LinkedIn</option>
+                        <option value="Television">Television</option>
+                    </select>
+                </div>
+
+                <div class="accepted-cards">
+                    <h2>Accepted Cards</h2>
+                    <p>We accept:</p>
+                    <div class="card-images">
+                        <img src="./images/flags.png" alt="flags">
+                    </div>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <form id="contact-form">
+                <!-- Existing form fields for reservations... -->
+
+                <!-- Contact Us Form -->
+                <div class="contact-us-form" class="form-container">
+                    <h2>Contact Us</h2>
+
+                    <div class="form-group">
+                        <label for="contact-name">Your Name:</label>
+                        <input type="text" id="contact-name" name="contact-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">Your Email:</label>
+                        <input type="email" id="contact-email" name="contact-email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div>
+                <p class="information">
+                    &copy; <span id="Year"></span> | Mateus de Sousa Schiavi | Last Updated:
+                    <span id="Modified"></span>
+                </p>
+            </div>
+        </footer>
+        <script src="./scripts/data.js"></script>
+        <script src="./scripts/getDate.js"></script>
+    </body>
+
+</html>

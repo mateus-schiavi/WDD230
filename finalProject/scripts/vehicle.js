@@ -23,8 +23,8 @@ const imageInformation = [
             'Seat Height': '28.3 inches',
             'Curb Weight': '179 pounds (Includes all standard equipment, required fluids and full tank of fuel)',
             'Fuel Capacity': '1.2 gallons',
-            'Miles Per Gallon': 'TBD MPG - Honda\'s fuel economy estimates are based on EPA exhaust emission measurement test procedures and are intended for comparison purposes only. Your actual mileage will vary depending on how you ride,'
-            + 'how you maintain your vehicle, weather, road conditions, tire pressure, installation of accessories, cargo, rider and passenger weight, and other factors.'
+            'Miles Per Gallon': 'TBD MPG - Honda\'s fuel economy estimates are based on EPA exhaust emission measurement test procedures and are intended for comparison purposes only.<br> Your actual mileage will vary depending on how you ride,'
+                + 'how you maintain your vehicle, weather, road conditions, tire pressure, installation of accessories, cargo, rider and passenger weight, and other factors.'
         }
     },
     {
@@ -98,7 +98,7 @@ const imageInformation = [
             'Induction': 'Fuel Injection (PGM-FI); 40 mm throttle body',
             'Valve Train': 'OHV; four valves per cylinder',
             'Clutch': 'Automatic',
-            'Transmission': 'Automotive-style automatic transmission with hydraulic torque converter, three forward gears and Reverse. Three drive modes include 2WD, 4WD and 4WD with Differential lock. AT/MT modes with paddle shifting on the deluxe and Forest models.',
+            'Transmission': 'Automotive-style automatic transmission with hydraulic torque converter, three forward gears and Reverse.Three drive modes include 2WD, 4WD and 4WD with Differential lock.<br> AT/MT modes with paddle shifting on the deluxe and Forest models.',
             'Driveline': 'Direct front and rear driveshafts',
             'Front Suspension': 'Independent double-wishbone; 7.9-inch travel',
             'Rear Suspension': 'Independent double-wishbone; 7.9-inch travel',
@@ -119,6 +119,60 @@ const imageInformation = [
             'Safety': 'Recommended for Drivers 16 years of age and older',
             'Available Colors': 'Avenger Red, Black Forest Green, Sandstone Beige',
             'Model ID': 'SXS700M2'
+        }
+    },
+    {
+        description: {
+            'Name': 'Jeep Wrangler - 4 door with a/c',
+            'Engine Ype and Required Fuel': 'Regular Unleaded V-6',
+            'Displacement (liters/cubic inches)': '3.6L/220',
+            'Fuel System': 'Sequential MPI',
+            'Maximum Horsepower @ RPM': '285 @ 6400',
+            'Maximum Torque @ RPM': '260 @ 4800',
+            'Engine Oil Cooler': 'Regular Duty',
+            'Number of Transmission Speeds': '6',
+            'Transmission Description': 'Manual w/OD',
+            'CO2 Emissions, 15K mi/year (tons)': '9.4',
+            'Fuel Capacity': '21.5',
+            'Passenger / Seating Capacity': '5',
+            'Steering Type': 'Re-Circulating Ball',
+            'Front Suspension Type':'Leading Link',
+            'Rear Suspension Type': 'Trailing Arm',
+            'Brake Type': '4-Wheel Disc',
+            'Anti-Lock-Braking System': '4-Wheel',
+            'Maximum Towing Capacity (pounds)': '3500',
+            'Spare Tire Size': 'Full-Size',
+            'Spare Wheel Material': 'Steel',
+            'Front Tire Size': 'P245/75SR17',
+            'Rear Tire Size': 'P245/75SR17',
+            'Front and Real Wheel Size (inches)': '17 x 7.5' 
+        }
+    },
+    {
+        description: {
+            'Name': 'Jeep Wrangler - 2 door',
+            'Engine Ype and Required Fuel': 'Regular Unleaded V-6',
+            'Displacement (liters/cubic inches)': '3.6L/220',
+            'Fuel System': 'Sequential MPI',
+            'Maximum Horsepower @ RPM': '285 @ 6400',
+            'Maximum Torque @ RPM': '260 @ 4800',
+            'Engine Oil Cooler': 'Regular Duty',
+            'Number of Transmission Speeds': '6',
+            'Transmission Description': 'Manual w/OD',
+            'CO2 Emissions, 15K mi/year (tons)': '9.4',
+            'Fuel Capacity': '21.5',
+            'Passenger / Seating Capacity': '5',
+            'Steering Type': 'Re-Circulating Ball',
+            'Front Suspension Type':'Leading Link',
+            'Rear Suspension Type': 'Trailing Arm',
+            'Brake Type': '4-Wheel Disc',
+            'Anti-Lock-Braking System': '4-Wheel',
+            'Maximum Towing Capacity (pounds)': '3500',
+            'Spare Tire Size': 'Full-Size',
+            'Spare Wheel Material': 'Steel',
+            'Front Tire Size': 'P245/75SR17',
+            'Rear Tire Size': 'P245/75SR17',
+            'Front and Real Wheel Size (inches)': '17 x 7.5' 
         }
     }
 ];

@@ -4,11 +4,32 @@ async function fetchDataAndDisplay() {
         const response = await fetch('./data/data.json'); // Adjust the path accordingly
         const data = await response.json();
 
-        displayData(data.reservation_pricing, 'reservation-table');
-        displayData(data.walk_in_pricing, 'walk-in-table');
+        const combinedData = combineData(data.reservation_pricing, data.walk_in_pricing);
+        displayData(combinedData, 'combined-table');
     } catch (error) {
         console.log(error);
     }
+}
+
+function combineData(reservationData, walkInData) {
+    const combinedData = [];
+
+    reservationData.forEach(reservation => {
+        const matchingWalkIn = walkInData.find(walkIn => walkIn['Rental Type'] === reservation['Rental Type']);
+
+        if (matchingWalkIn) {
+            combinedData.push({
+                'Rental Type': reservation['Rental Type'],
+                'Max. Persons': reservation['Max. Persons'],
+                'Reservation - Half Day (3 hrs)': reservation['Half Day (3 hrs)'],
+                'Reservation - Full Day': reservation['Full Day'],
+                'Walk-In - Half Day (3 hrs)': matchingWalkIn['Half Day (3 hrs)'],
+                'Walk-In - Full Day': matchingWalkIn['Full Day']
+            });
+        }
+    });
+
+    return combinedData;
 }
 
 function displayData(data, tableId) {
@@ -37,13 +58,23 @@ function displayData(data, tableId) {
         const row = document.createElement('tr');
         headers.forEach(header => {
             const cell = document.createElement('td');
-            cell.textContent = rowData[header];
+            if (header !== 'Max. Persons') {
+                if (!isNaN(rowData[header]) && typeof rowData[header] === 'number') {
+                    cell.textContent = '$' + rowData[header].toLocaleString('en-US', {
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2
+                    });
+                } else {
+                    cell.textContent = rowData[header];
+                }
+            } else {
+                cell.textContent = rowData[header];
+            }
             row.appendChild(cell);
         });
         table.appendChild(row);
     });
 }
-
 document.addEventListener('DOMContentLoaded', () => {
     fetchDataAndDisplay();
 });

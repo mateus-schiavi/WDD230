@@ -7,12 +7,13 @@
 
         <meta name="description" content="Portal for exploring Cozumel - by Mateus de Sousa Schiavi">
         <meta name="author" content="Mateus de Sousa Schaivi">
-        <meta property="og:title" content="Your Name - Explore Cozumel">
+        <meta property="og:image" content="https://r4t2s9v3.stackpathcdn.com/wp-content/uploads/2018/05/ilha-cozumel-mexico.jpg">
+        <meta property="og:title" content="Cozumel's Scooter Rental">
         <meta property="og:description" content="Explore the beauty of Cozumel">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://mateus-schiavi.github.io/wdd230/index.html">
+        <meta property="og:url" content="https://github.com/mateus-schiavi/wdd230/blob/main/finalProject">
+        <meta property="og:url" content="https://github.com/mateus-schiavi/wdd230/blob/main/finalProject/index.html">
         <meta property="og:img" content="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png">
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,32 +22,33 @@
         <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="./styles/small.css">
 
-        <title>Final Project - Home Page</title>
+        <title>Scooter Rental - Home Page</title>
     </head>
 
     <body>
-        <header>
-            <h1>
+        <header class="header">
+            <div class="logo">
                 <img class="photo" src="./images/Cozumel_2.jpg" alt="Cozumel Photo">
-            </h1>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="./index.html" class="active">Home</a></li>
+                    <li><a href="./cozumel.html">About Cozumel</a></li>
+                    <li><a href="./rentals.html">Rentals</a></li>
+                </ul>
+            </nav>
         </header>
-        <nav class="navigation">
-            <ul>
-                <li><a href="./index.html" class="active">Home</a></li>
-                <li><a href="./cozumel.html">About Cozumel</a></li>
-                <li><a href="./gallery.html">Vehicles Gallery</a></li>
-                <li><a href="#">Do a Reservation</a></li>
-            </ul>
-        </nav>
+        
 
         <main>
             <div class="cozumel-image">
 
                 <div class="cozumel-label">
-                    <p>Explore the Beauty of Cozumel</p>
+                    <h2>Ready to Explore Cozumel?</h2>
+                    <p>Don't miss out on the adventure! Reserve your vehicle now and discover the beauty of Cozumel at your own pace.</p>
+                    <a href="./reservation.html" class="reservation-button">Make a Reservation</a>
                 </div>
             </div>
-            <h2>Discover Cozumel: An Island Paradise</h2>
             <section class="card-info">
                 <h3>Top Vehicles to Rent</h3>
                 <p>We offer a variety of rental options to suit your needs:</p>
