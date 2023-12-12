@@ -1,15 +1,14 @@
-/* styles.css */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Helvetica', Sans-Serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     height: 100vh;
     margin: 0;
-    background-color: #f9f9f9;
+    background-color: rgb(242, 242, 244);
 }
 
 header {
@@ -80,11 +79,16 @@ th {
 }
 
 .vehicle-details {
-    list-style: none; /* Remove os bullets */
-    padding: 0; /* Remove o preenchimento padrão */
-    margin: 0; /* Remove as margens padrão */
+    list-style: none;
+    padding: 0;
+    text-align: justify;
 }
 
 .vehicle-details li {
-    margin-bottom: 5px; /* Espaçamento entre os itens */
+    margin-bottom: 10px;
+}
+
+/* Último item da lista não justificado para evitar espaçamento estranho */
+.vehicle-details li:last-child {
+    text-align: left;
 }
