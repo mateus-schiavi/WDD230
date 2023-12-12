@@ -1,103 +1,106 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Portal for exploring Cozumel - by Mateus de Sousa Schiavi">
+    <meta name="author" content="Mateus de Sousa Schiavi">
+    <meta property="og:image" content="https://r4t2s9v3.stackpathcdn.com/wp-content/uploads/2018/05/ilha-cozumel-mexico.jpg">
+    <meta property="og:title" content="Cozumel's Scooter Rental">
+    <meta property="og:description" content="Explore the beauty of Cozumel">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/mateus-schiavi/wdd230/blob/main/finalProject">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/small.css">
 
-        <meta name="description" content="Portal for exploring Cozumel - by Mateus de Sousa Schiavi">
-        <meta name="author" content="Mateus de Sousa Schaivi">
-        <meta property="og:image" content="https://r4t2s9v3.stackpathcdn.com/wp-content/uploads/2018/05/ilha-cozumel-mexico.jpg">
-        <meta property="og:title" content="Cozumel's Scooter Rental">
-        <meta property="og:description" content="Explore the beauty of Cozumel">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://github.com/mateus-schiavi/wdd230/blob/main/finalProject">
-        <meta property="og:url" content="https://github.com/mateus-schiavi/wdd230/blob/main/finalProject/index.html">
-        <meta property="og:img" content="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./styles/base.css">
-        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="./styles/small.css">
+    <title>Scooter Rental - Home Page</title>
+</head>
 
-        <title>Scooter Rental - Home Page</title>
-    </head>
-
-    <body>
-        <header class="header">
-            <div class="logo">
-                <img class="photo" src="./images/Cozumel_2.jpg" alt="Cozumel Photo">
-            </div>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="./index.html" class="active">Home</a></li>
-                    <li><a href="./cozumel.html">About Cozumel</a></li>
-                    <li><a href="./rentals.html">Rentals</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-
-        <main>
-            <div class="cozumel-image">
-
-                <div class="cozumel-label">
-                    <h2>Ready to Explore Cozumel?</h2>
-                    <p>Don't miss out on the adventure! Reserve your vehicle now and discover the beauty of Cozumel at your own pace.</p>
-                    <a href="./reservation.html" class="reservation-button">Make a Reservation</a>
-                </div>
-            </div>
-            <section class="card-info">
-                <h3>Top Vehicles to Rent</h3>
-                <p>We offer a variety of rental options to suit your needs:</p>
-                <ul>
-                    <li>Honda Metro Scooter</li>
-                    <li>Honda Dio Scooter</li>
-                    <li>Honda PCX 150 Scooter</li>
-                    <li>Honda Pionner ATV</li>
-                    <li>Jeep Wrangler - 4 door with a/c</li>
-                    <li>Jeep Wrangler - 2 door</li>
-                </ul>
-                <p>Contact us for more information on each rental type and pricing.</p>
-            </section>
-            <section class="card-info">
-                <h3>Contact Information</h3>
-                <p>For inquiries and bookings, reach out to us:</p>
-                <ul>
-                    <li>Phone: +52 55 1234 5678</li>
-                    <li>Email: cozumel_rentals@gmail.com</li>
-                </ul>
-            </section>
-            <section class="card-info">
-                <h3>Useful Information</h3>
-                <p>
-                    <span class="weather-info">
-                        Weather in Cozumel:
-                        <span id="temperature-value"></span><br>
-                        <span id="wind-chill-value"></span><br>
-                        <img id="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather Icon">
-                    </span>
-                </p>
-            </section>
-        </main>
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.484444654032!2d-86.9613058849494!3d20.422836986337153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e590c23c4ca47%3A0x2a3b7d6c6c8d7ff7!2sCozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1696000879253!5m2!1sen!2sus"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img class="photo" src="./images/Cozumel_2.jpg" alt="Cozumel Photo">
         </div>
-        <footer>
-            <div>
-                <p class="information">
-                    &copy; <span id="Year"></span> | Mateus de Sousa Schiavi | Last Updated:
-                    <span id="Modified"></span>
-                </p>
+        <nav class="navigation">
+            <ul>
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./cozumel.html">About Cozumel</a></li>
+                <li><a href="./rentals.html">Rentals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Reservation Section -->
+        <div class="cozumel-image">
+            <div class="cozumel-label">
+                <h2>Ready to Explore Cozumel?</h2>
+                <p>Don't miss out on the adventure! Reserve your vehicle now and discover the beauty of Cozumel at your own pace.</p>
+                <a href="./reservation.html" class="reservation-button">Make a Reservation</a>
             </div>
-        </footer>
-        <script src="./scripts/getDate.js"></script>
-        <script src="./scripts/getWeather.js"></script>
-    </body>
+        </div>
+        <!-- Info Section -->
+        <section class="card-info">
+            <h3>Top Vehicles to Rent</h3>
+            <!-- Vehicles List -->
+            <p>We offer a variety of rental options to suit your needs:</p>
+            <ul>
+                <li>Honda Metro Scooter</li>
+                <li>Honda Dio Scooter</li>
+                <li>Honda PCX 150 Scooter</li>
+                <li>Honda Pioneer ATV</li>
+                <li>Jeep Wrangler 4 doors with A/C</li>
+                <li>Jeep Wrangler 2 doors</li>
+            </ul>
+            <p>Contact us for more information on each rental type and pricing.</p>
+        </section>
+        <!-- Seção de contato -->
+        <section class="card-info">
+            <h3>Contact Information</h3>
+            <p>For inquiries and bookings, reach out to us:</p>
+            <ul>
+                <li>Phone: +52 55 1234 5678</li>
+                <li>Email: cozumel_rentals@gmail.com</li>
+            </ul>
+        </section>
+        <!-- Seção de informações úteis -->
+        <section class="card-info">
+            <h3>Useful Information</h3>
+            <p>
+                <span class="weather-info">
+                    <!-- Informações meteorológicas -->
+                    Weather in Cozumel:
+                    <span id="temperature-value"></span><br>
+                    <span id="wind-chill-value"></span><br>
+                    <img id="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather Icon">
+                </span>
+            </p>
+        </section>
+    </main>
+    <!-- Mapa -->
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.484444654032!2d-86.9613058849494!3d20.422836986337153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e590c23c4ca47%3A0x2a3b7d6c6c8d7ff7!2sCozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1696000879253!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- Rodapé -->
+    <footer>
+        <div>
+            <!-- Informações do rodapé -->
+            <p class="information">
+                &copy; <span id="Year"></span> | Mateus de Sousa Schiavi | Last Updated:
+                <span id="Modified"></span>
+            </p>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="./scripts/getDate.js"></script>
+    <script src="./scripts/getWeather.js"></script>
+</body>
 
 </html>
