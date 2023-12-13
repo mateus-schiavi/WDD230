@@ -46,3 +46,5 @@ function calculateWindChill(temperature, windSpeed) {
 
 // Chama a função getWeatherData quando o conteúdo da página estiver carregado.
 document.addEventListener('DOMContentLoaded', getWeatherData);
+
+

@@ -77,6 +77,16 @@ th {
     text-align: justify;
 }
 
+.localization p {
+    max-width: 600px; /* Largura máxima do parágrafo */
+    margin: 20px auto; /* Margens superior e inferior de 20px e centralização horizontal */
+    padding: 10px; /* Espaçamento interno para afastar o texto das bordas */
+    text-align: justify; /* Alinhamento justificado */
+    border: 1px solid #ccc; /* Borda para criar a aparência de um quadrado */
+    border-radius: 5px; /* Adiciona cantos arredondados */
+    background-color: #f9f9f9;
+}
+
 .vehicle-details li {
     margin-bottom: 10px;
 }
